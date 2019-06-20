@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci_item_photo"
+                android:layout_width="@dimen/image_very_large"
+                android:layout_height="@dimen/image_very_large"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/medium_margin"
+                tools:src="@android:color/holo_blue_bright"/>
+
+            <LinearLayout
+                android:id="@+id/line_alias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ci_item_photo"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    tools:text="Eren Jaeger"
+                    android:textSize="@dimen/large_text"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_alias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    tools:text="Titan Boy  (巨人の小僧)"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_detail_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/huge_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            tools:text="Description"
+            android:lineSpacingMultiplier="1"
+            android:textColor="@android:color/black"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextDesc.Field"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/name"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_row_name"
+                    style="@style/TextDesc.Value"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    tools:text="Eren Jaeger"
+                    android:textColor="@android:color/black"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextDesc.Field"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/alias"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_row_alias"
+                    style="@style/TextDesc.Value"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    tools:text="Titan Boy  (巨人の小僧)"
+                    android:textColor="@android:color/black"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextDesc.Field"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/species"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_row_species"
+                    style="@style/TextDesc.Value"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    tools:text="Human, Titan Intelligent"
+                    android:textColor="@android:color/black"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextDesc.Field"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/gender"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_row_gender"
+                    style="@style/TextDesc.Value"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    tools:text="Male"
+                    android:textColor="@android:color/black"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextDesc.Field"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/age"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_row_age"
+                    style="@style/TextDesc.Value"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    tools:text="15"
+                    android:textColor="@android:color/black"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextDesc.Field"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/birthplace"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_row_birthplace"
+                    style="@style/TextDesc.Value"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    tools:text="Shiganshina"
+                    android:textColor="@android:color/black"/>
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

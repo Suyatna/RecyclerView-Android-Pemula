@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Submisi_Android_Pemula_Suyatna</string>
+    <string name="name">Name</string>
+    <string name="alias">Alias</string>
+    <string name="species">Species</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="birthplace">Birthplace</string>
+    <string name="share">Share</string>
+    <string name="favorit">Favorit</string>
+</resources>
